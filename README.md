@@ -38,7 +38,7 @@ docker compose up -d
 Once the services are up and running, access the main application container (named `crecereai-backend-web` in this example):
 
 ```bash
-docker exec -it crecereai-backend--web bash
+docker exec -it crecereai-backend-web bash
 ```
 
 This command opens a shell session inside the container, allowing you to run commands in the app environment.
