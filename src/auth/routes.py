@@ -88,8 +88,9 @@ async def create_user_account(
     send_email.delay(emails, subject, html)
 
     return {
-        "message": f"Account Created! Check email to verify your account: {link}",
+        "message": "Account Created! Check email to verify your account",
         "user": new_user,
+        "verification_url": link,
     }
 
 

@@ -24,7 +24,7 @@ def register_middleware(app: FastAPI):
 
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
+        allow_origins=["http://localhost:3000"],
         allow_methods=["*"],
         allow_headers=["*"],
         allow_credentials=True,
@@ -35,7 +35,6 @@ def register_middleware(app: FastAPI):
         allowed_hosts=[
             "localhost",
             "127.0.0.1",
-            "bookly-api-dc03.onrender.com",
             "0.0.0.0",
         ],
     )
